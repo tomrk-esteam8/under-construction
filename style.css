@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body {
+    background-color: #3c9af0;
+    overflow-x: hidden;
+    font-size: 10px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: "Poppins", serif;
+}
+
+header img {
+    height: 80px;
+    margin: 2rem 0 0 2rem;
+}
+
+.text h1 {
+    font-size: 8rem;
+    font-weight: 600;
+
+}
+
+.under {
+    color: #052C65;
+    text-shadow: 5px 5px 5px rgba(71, 71, 71, 0.5);
+}
+
+.con {
+
+    color: #ffffff;
+    text-shadow: 5px 5px 3px rgba(125, 125, 125, 0.5);
+}
+
+.color-white {
+    color: white;
+}
+
+.color-primary {
+    color: #193541;
+}
+
+.padding-1x {
+    padding: 1rem;
+}
+
+.padding-h-1x {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.padding-v-1x {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.padding-h-2x {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.padding-v-2x {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.padding-2x {
+    padding: 2rem;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.const-msg-container {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.const-msg {
+    padding: 3rem;
+    text-align: right;
+}
+
+.const-msg .const-text {
+    margin-top: 1rem;
+}
+
+.under-text {
+    display: inline-block;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.const-msg .socials {
+    margin-top: 1rem;
+}
+
+.socials .links {
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.links li {
+    list-style: none;
+    margin: 0 0.5rem;
+    padding: 1.3rem 1rem 1rem 1rem;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.35s;
+    cursor: pointer;
+}
+
+.links li:hover {
+    background-color: white;
+}
+
+.links li a {
+    color: white;
+}
+
+.links li:hover a {
+    color: #193541;
+}
+
+.const-msg .gears {
+    padding: 2rem 3.5rem;
+}
+
+.const-msg .text {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.51);
+}
+
+.svg-icon {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.svg-icon-large {
+    width: 10em;
+    height: 10em;
+    animation-duration: 6000ms;
+    animation-name: spinLeft;
+}
+
+.svg-icon-small {
+    width: 6em;
+    height: 6em;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: -25px;
+    animation-duration: 4000ms;
+    animation-name: spinRight;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+    fill: white;
+}
+
+.svg-icon-small path {
+    stroke: white;
+    stroke-width: .3;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 768px) {
+    .links li {
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+    }
+    .text h1 {
+        font-size: 5rem;
+    }
+
+    .const-msg-container {
+        justify-content: center;
+
+    }
+
+    .const-msg {
+        text-align: center;
+        color: black;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .const-msg .text div {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .text h1{
+        font-size: 3.5rem;
+    }
+}
+
+@keyframes spinLeft {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinRight {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
